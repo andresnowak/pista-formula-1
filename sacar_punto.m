@@ -12,6 +12,6 @@ while ~(dist >= largo)
     y2 = fun(x2);
     dist = dist_puntos(x1, y1, x2, y2);
     
-    count = count + 0.00000001; 
+    count = count + 0.0000000001; 
     %para ser los mas precisos posibles usamos un paso muy pequeño
 end

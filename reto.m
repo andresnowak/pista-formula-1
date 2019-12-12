@@ -33,6 +33,11 @@ fl = @(x) (1+(dfp(x).^2)).^(1/2);
 n = 100;
 a = 100;
 b = 2800;
+%{
+h = (b - a) / n;
+x2 = a:h:b;
+nx = length(x2);
+%}
 
 A = m_simpson(fl, a, b, n);
 
